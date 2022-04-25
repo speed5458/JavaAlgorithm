@@ -13,7 +13,12 @@ public class String04 {
             arr[i] = sc.next();
         }
 
+
+
         for (int k = 0; k < arr.length; k++) {
+            //String rs2 = new StringBuilder(arr[k]).reverse().toString();
+             // reverse 활용하면 그냥 바로 끝
+
             String rs = arr[k];
             sb = new StringBuilder();
             for (int j = rs.length()-1; j >= 0; j--) {
