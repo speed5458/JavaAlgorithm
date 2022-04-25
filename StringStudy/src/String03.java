@@ -12,7 +12,7 @@ public class String03 {
         String[] arr = bf.readLine().split(" ");
 
         String maxStr = Arrays.asList(arr).stream().
-                max(Comparator.comparing(String::length)).get();
+                max(Comparator.comparing(String::length)).orElse(null);
 
         System.out.println(maxStr);
     }
