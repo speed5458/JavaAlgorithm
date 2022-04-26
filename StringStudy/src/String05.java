@@ -10,20 +10,22 @@ public class String05 {
         char[] arrC = inputS1.toCharArray();
 
         int lt = 0;
-        int rt = arrC.length;
+        int rt = arrC.length-1;
 
-        while(lt > rt){
-            char temp = arrC[lt];
-            arrC[lt] = arrC[rt];
-            arrC[rt] = temp;
-            lt ++;
-            rt --;
+        while(lt < rt){
+            if(!Character.isAlphabetic(arrC[lt])){
+                lt++;
+            }else if(!Character.isAlphabetic(arrC[rt])){
+                rt--;
+            }else{
+                char temp = arrC[lt];
+                arrC[lt] = arrC[rt];
+                arrC[rt] = temp;
+                lt ++;
+                rt --;
+            }
         }
-
-        for (char x: arrC) {
-            System.out.print(x);
-        }
-
+        System.out.println(String.valueOf(arrC));
 
     }
 
