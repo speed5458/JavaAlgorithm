@@ -10,6 +10,7 @@ public class String06 {
 
         String rs ="";
         for (int i = 0; i < inputS1.length(); i++) {
+            //indexOf 는 그 Char 의 맨앞 index 를 반환한다. i 진행도랑 다르면 두번쨰 이상 발견되는거니까 가능
             if(inputS1.indexOf(inputS1.charAt(i))==i){
                 rs += inputS1.charAt(i);
             }
