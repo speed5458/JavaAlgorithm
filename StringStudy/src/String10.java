@@ -19,7 +19,7 @@ public class String10 {
             }
         }
         p = 1000;
-        for (int j = inputS1.length()-1; j >= 0; j--) {
+        for (int j = inputS1.length()-1; j >= 0; j--) { 
             if(inputS1.charAt(j) == c){
                 p = 0;
             }else{
