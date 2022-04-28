@@ -1,3 +1,5 @@
+package StringStudy;
+
 import java.util.Scanner;
 
 //특정문자 뒤집기
