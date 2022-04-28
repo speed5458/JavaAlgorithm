@@ -1,3 +1,5 @@
+package StringStudy;
+
 import java.util.Scanner;
 
 public class String12 {
