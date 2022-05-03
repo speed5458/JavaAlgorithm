@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 public class Insert_Sort {
-    public static void main(String[] args){
-        int[] arr = new int[]{3,1,5,2,8,6,7,9,8};
+    public static void main(String[] args) {
+        int[] arr = new int[]{3, 1, 5, 2, 8, 6, 7, 9, 8};
 
         for (int i = 1; i < arr.length; i++) {
             int target = arr[i];
@@ -13,8 +13,9 @@ public class Insert_Sort {
             }
             arr[j+1] = target;
         }
-
-        System.out.println(Arrays.toString(arr));
+        for (int x : arr) {
+            System.out.printf(x + " ");
+        }
     }
 
 }
