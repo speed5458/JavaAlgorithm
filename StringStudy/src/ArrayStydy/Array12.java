@@ -21,6 +21,8 @@ public class Array12 {
         for (int i = 1; i <= n; i++) { // 기준 사람군
             for (int j = 1; j <= n; j++) { //비교 사람군
                 int cnt = 0;
+                boolean isPosible = true;
+
                 for (int k = 0; k < m; k++) { //테스트 횟수
                     int pi = 0;
                     int pj = 0;
@@ -28,11 +30,14 @@ public class Array12 {
                         if(arrInt[k][s] == i) pi = s;
                         if(arrInt[k][s] == j) pj = s;
                     }
-                    if(pi < pj){
-                        cnt++;
+                    //if(pi < pj) cnt++;
+                    if(pi >= pj) { // 크거나 같은거로 줘야한다 아니면 자기랑 같은거 비교떄 여기 안타서 answer 추가됨
+                        isPosible = false;
                     }
                 }//end k
-             if(cnt == m) answer++;
+             //if(cnt == m) answer++;
+
+             if(isPosible) answer++;
             } //end j
         } //end i
 
