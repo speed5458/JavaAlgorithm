@@ -21,8 +21,6 @@ public class Array10 {
 
     private static int solution(int n, int[][] arrInt) {
         int answer = 0;
-        //TODO
-        // 1 ~ n 탐색하면서 상하좌우 분석후 i값이 더 크면 Count++
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
