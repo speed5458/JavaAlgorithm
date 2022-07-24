@@ -28,7 +28,7 @@ public class 동전교환 {
     }
 
     public void DFS(int L, int sum){
-        System.out.println(L + " :::: " + sum);
+        //System.out.println(L + " :::: " + sum);
         if(sum > m) return;
         if(L >= answer) return;
         if(sum == m) {
